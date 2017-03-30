@@ -15,6 +15,8 @@
 		FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */; };
 		FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */; };
 		FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */; };
+		FA3DC79E1E8DD26900B43C66 /* ResturantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC79C1E8DD26900B43C66 /* ResturantTableViewController.m */; };
+		FA3DC79F1E8DD26900B43C66 /* ResturantTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC79D1E8DD26900B43C66 /* ResturantTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3DC7851E8DB7C500B43C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3DC7871E8DB7C500B43C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3DC79B1E8DD26900B43C66 /* ResturantTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResturantTableViewController.h; sourceTree = "<group>"; };
+		FA3DC79C1E8DD26900B43C66 /* ResturantTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResturantTableViewController.m; sourceTree = "<group>"; };
+		FA3DC79D1E8DD26900B43C66 /* ResturantTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResturantTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,9 @@
 				843447781E8DCFD000FA254E /* PickerViewController.h */,
 				843447791E8DCFD000FA254E /* PickerViewController.m */,
 				8434477A1E8DCFD000FA254E /* PickerViewController.xib */,
+				FA3DC79B1E8DD26900B43C66 /* ResturantTableViewController.h */,
+				FA3DC79C1E8DD26900B43C66 /* ResturantTableViewController.m */,
+				FA3DC79D1E8DD26900B43C66 /* ResturantTableViewController.xib */,
 				FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */,
 				FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */,
 				FA3DC7871E8DB7C500B43C66 /* Info.plist */,
@@ -148,6 +156,7 @@
 				FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */,
 				FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */,
 				8434477C1E8DCFD000FA254E /* PickerViewController.xib in Resources */,
+				FA3DC79F1E8DD26900B43C66 /* ResturantTableViewController.xib in Resources */,
 				F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +171,7 @@
 				FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
 				8434477B1E8DCFD000FA254E /* PickerViewController.m in Sources */,
+				FA3DC79E1E8DD26900B43C66 /* ResturantTableViewController.m in Sources */,
 				F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
