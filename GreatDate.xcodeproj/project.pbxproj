@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D7A1E8DC7430011D12C /* LocationViewController.m */; };
+		F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */; };
 		FA3DC7781E8DB7C500B43C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC7771E8DB7C500B43C66 /* main.m */; };
 		FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */; };
 		FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F97F0D791E8DC7430011D12C /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		F97F0D7A1E8DC7430011D12C /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		FA3DC7731E8DB7C500B43C66 /* GreatDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3DC7771E8DB7C500B43C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA3DC7791E8DB7C500B43C66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +68,9 @@
 				FA3DC78D1E8DC14000B43C66 /* InitialViewController.h */,
 				FA3DC78E1E8DC14000B43C66 /* InitialViewController.m */,
 				FA3DC78F1E8DC14000B43C66 /* InitialViewController.xib */,
+				F97F0D791E8DC7430011D12C /* LocationViewController.h */,
+				F97F0D7A1E8DC7430011D12C /* LocationViewController.m */,
+				F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */,
 				FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */,
 				FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */,
 				FA3DC7871E8DB7C500B43C66 /* Info.plist */,
@@ -140,6 +148,7 @@
 				FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */,
 				FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */,
 				FA3DC7911E8DC14000B43C66 /* InitialViewController.xib in Resources */,
+				F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 				FA3DC7901E8DC14000B43C66 /* InitialViewController.m in Sources */,
 				FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
+				F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +309,7 @@
 				FA3DC78C1E8DB7C500B43C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
