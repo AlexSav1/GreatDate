@@ -13,8 +13,6 @@
 		FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */; };
 		FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */; };
 		FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */; };
-		FA3DC7901E8DC14000B43C66 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC78E1E8DC14000B43C66 /* InitialViewController.m */; };
-		FA3DC7911E8DC14000B43C66 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC78F1E8DC14000B43C66 /* InitialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +26,6 @@
 		FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3DC7851E8DB7C500B43C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3DC7871E8DB7C500B43C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA3DC78D1E8DC14000B43C66 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
-		FA3DC78E1E8DC14000B43C66 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
-		FA3DC78F1E8DC14000B43C66 /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +60,6 @@
 			children = (
 				FA3DC7791E8DB7C500B43C66 /* AppDelegate.h */,
 				FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */,
-				FA3DC78D1E8DC14000B43C66 /* InitialViewController.h */,
-				FA3DC78E1E8DC14000B43C66 /* InitialViewController.m */,
-				FA3DC78F1E8DC14000B43C66 /* InitialViewController.xib */,
 				F97F0D791E8DC7430011D12C /* LocationViewController.h */,
 				F97F0D7A1E8DC7430011D12C /* LocationViewController.m */,
 				F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */,
@@ -147,7 +139,6 @@
 			files = (
 				FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */,
 				FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */,
-				FA3DC7911E8DC14000B43C66 /* InitialViewController.xib in Resources */,
 				F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3DC7901E8DC14000B43C66 /* InitialViewController.m in Sources */,
 				FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
 				F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */,

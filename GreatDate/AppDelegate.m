@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "InitialViewController.h"
+#import "LocationViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UIViewController *rootController = [[InitialViewController alloc]initWithNibName:@"InitialViewController" bundle:nil];
+    UIViewController *rootController = [[LocationViewController alloc]initWithNibName:@"LocationViewController" bundle:nil];
     
     self.navigationController = [[UINavigationController alloc]
                                  initWithRootViewController:rootController];
