@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F964DA361E8DBFAB009B4C2D /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F964DA341E8DBFAB009B4C2D /* LocationViewController.m */; };
-		F964DA371E8DBFAB009B4C2D /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F964DA351E8DBFAB009B4C2D /* LocationViewController.xib */; };
 		FA3DC7781E8DB7C500B43C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC7771E8DB7C500B43C66 /* main.m */; };
 		FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */; };
 		FA3DC77E1E8DB7C500B43C66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC77D1E8DB7C500B43C66 /* ViewController.m */; };
@@ -18,9 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F964DA331E8DBFAB009B4C2D /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		F964DA341E8DBFAB009B4C2D /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
-		F964DA351E8DBFAB009B4C2D /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		FA3DC7731E8DB7C500B43C66 /* GreatDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3DC7771E8DB7C500B43C66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA3DC7791E8DB7C500B43C66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,9 +64,6 @@
 				FA3DC77D1E8DB7C500B43C66 /* ViewController.m */,
 				FA3DC77F1E8DB7C500B43C66 /* Main.storyboard */,
 				FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */,
-				F964DA331E8DBFAB009B4C2D /* LocationViewController.h */,
-				F964DA341E8DBFAB009B4C2D /* LocationViewController.m */,
-				F964DA351E8DBFAB009B4C2D /* LocationViewController.xib */,
 				FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */,
 				FA3DC7871E8DB7C500B43C66 /* Info.plist */,
 				FA3DC7761E8DB7C500B43C66 /* Supporting Files */,
@@ -148,7 +140,6 @@
 				FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */,
 				FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */,
 				FA3DC7811E8DB7C500B43C66 /* Main.storyboard in Resources */,
-				F964DA371E8DBFAB009B4C2D /* LocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +153,6 @@
 				FA3DC77E1E8DB7C500B43C66 /* ViewController.m in Sources */,
 				FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
-				F964DA361E8DBFAB009B4C2D /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
