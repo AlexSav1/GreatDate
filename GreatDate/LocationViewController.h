@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "Mediator.h"
+#import "BackEnd.h"
 
-@interface LocationViewController : UIViewController
+@interface LocationViewController : UIViewController <CLLocationManagerDelegate>
+
+@property Mediator *mediator;
+
+@property CLLocationManager *locationManager;
+
 - (IBAction)currentLocationButton:(UIButton *)sender;
 - (IBAction)zipCodeButton:(UIButton *)sender;
 
