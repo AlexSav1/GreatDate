@@ -17,17 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.image]]];
-    self.locationName.text = self.name;
-    self.locationAddress.text = self.address;
-    self.locationPhoneNumber.text = self.phoneNumber;
+    self.mediator = [Mediator sharedDataManager];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) viewWillAppear:(BOOL)animated{
+    //self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.image]]];
+    self.locationName.text = self.selectedLocation.name;
+    self.locationAddress.text = self.selectedLocation.address;
+    NSLog(@"%@", self.selectedLocation);
+    //self.locationPhoneNumber.text = self.phoneNumber;
 }
-
 /*
 #pragma mark - Navigation
 
@@ -39,12 +40,25 @@
 */
 
 - (IBAction)moreDetails:(UIButton *)sender {
-    WebViewController *webVC = [[WebViewController alloc] init];
-    webVC.url = self.url;
-    webVC.locationName = self.name;
-    [self.navigationController pushViewController:webVC animated:true];
+    self.mediator.webVC.url = self.selectedLocation.url;
+    self.mediator.webVC.locationName = self.selectedLocation.name;
+    [self.navigationController pushViewController:self.mediator.webVC animated:TRUE];
 }
 
 - (IBAction)letsGo:(UIButton *)sender {
+    
+    if(self.selectedLocation.isResturant == TRUE){
+        
+        [self.mediator.tableVC.currentPlacesToDisplay removeAllObjects];
+        [self.mediator.tableVC.currentPlacesToDisplay addObjectsFromArray:self.mediator.entertainmentLocationsArray];
+        self.mediator.selectedResturant = self.selectedLocation;
+        [self.navigationController popToViewController:self.mediator.tableVC animated:TRUE];
+    } else{
+        self.mediator.selectedEntertainment = self.selectedLocation;
+        self.mediator.resultsVC.selectedResturant = self.mediator.selectedResturant;
+        self.mediator.resultsVC.selectedEntertainment = self.mediator.selectedEntertainment;
+        [self.navigationController pushViewController:self.mediator.resultsVC animated:TRUE];
+    }
+    
 }
 @end

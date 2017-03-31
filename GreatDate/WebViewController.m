@@ -18,7 +18,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//  **** Setup config, webview, and URLrequest ****
+////  **** Setup config, webview, and URLrequest ****
+//    WKWebViewConfiguration *webConfig = [[WKWebViewConfiguration alloc]init];
+//    WKWebView *webView = [[WKWebView alloc]initWithFrame:self.view.frame configuration:webConfig];
+//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
+//    
+//    request.URL = self.url;
+//    
+//    NSString *convertedString = [self.locationName stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+//    
+//    NSLog(@"URL: %@", self.url);
+//    
+//    
+//    if(request.URL == nil){
+//        request.URL = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.google.com/#q=%@&*",convertedString]];
+//    }
+//    
+//    if(webView.isLoading){
+//        
+//    }
+//    
+//    NSURLRequest *productRequest = [NSURLRequest requestWithURL:request.URL];
+//    
+//    [webView loadRequest:productRequest];
+//    
+//    [self.view addSubview:webView];
+    
+    
+    // Do any additional setup after loading the view.
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    
+    //  **** Setup config, webview, and URLrequest ****
     WKWebViewConfiguration *webConfig = [[WKWebViewConfiguration alloc]init];
     WKWebView *webView = [[WKWebView alloc]initWithFrame:self.view.frame configuration:webConfig];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
@@ -27,10 +59,11 @@
     
     NSString *convertedString = [self.locationName stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     
-    NSLog(@"%@", convertedString);
+    NSLog(@"URL: %@", self.url);
     
     
-    if([request.URL isEqual:nil]){ request.URL = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.google.com/#q=%@&*", convertedString]];
+    if(request.URL == nil){
+        request.URL = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.google.com/#q=%@&*",convertedString]];
     }
     
     if(webView.isLoading){
@@ -43,10 +76,8 @@
     
     [self.view addSubview:webView];
     
+
     
-    // Do any additional setup after loading the view.
 }
-
-
 
 @end

@@ -28,6 +28,9 @@ static BackEnd *_backEnd;
         _backEnd = [[BackEnd alloc] init];
         self.pickerVC = [[PickerViewController alloc]initWithNibName:@"PickerViewController" bundle:nil];
         self.tableVC = [[TableViewController alloc]initWithNibName:@"TableViewController" bundle:nil];
+        self.detailsVC = [[DetailsViewController alloc]initWithNibName:@"DetailsViewController" bundle:nil];
+        self.resultsVC = [[ResultsViewController alloc]initWithNibName:@"ResultsViewController" bundle:nil];
+        self.webVC = [[WebViewController alloc]init];
         self.resturantArray = [[NSMutableArray alloc]init];
         self.entertainmentLocationsArray = [[NSMutableArray alloc]init];
     }

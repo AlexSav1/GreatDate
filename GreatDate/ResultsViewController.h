@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DateLocation.h"
 
 @interface ResultsViewController : UIViewController
+
+@property DateLocation *selectedResturant;
+
+@property DateLocation *selectedEntertainment;
+
 - (IBAction)goToSiteButtonOne:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabelOne;
 @property (strong, nonatomic) IBOutlet UILabel *locationLabelOne;

@@ -11,8 +11,11 @@
 #import "BackEnd.h"
 #import "PickerViewController.h"
 #import "TableViewController.h"
+#import "DetailsViewController.h"
+#import "ResultsViewController.h"
+#import "WebViewController.h"
 
-//@class TableViewController;
+@class DetailsViewController;
 
 @interface Mediator : NSObject
 
@@ -20,11 +23,21 @@
 
 @property NSMutableArray *resturantArray;
 
+@property DateLocation *selectedResturant;
+
 @property NSMutableArray *entertainmentLocationsArray;
+
+@property DateLocation *selectedEntertainment;
 
 @property PickerViewController *pickerVC;
 
 @property TableViewController *tableVC;
+
+@property DetailsViewController *detailsVC;
+
+@property ResultsViewController *resultsVC;
+
+@property WebViewController *webVC;
 
 
 + (id)sharedDataManager;

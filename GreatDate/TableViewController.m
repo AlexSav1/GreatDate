@@ -27,6 +27,10 @@
     self.mediator = [Mediator sharedDataManager];
 }
 
+-(void) viewWillAppear:(BOOL)animated{
+    
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
@@ -53,6 +57,7 @@
     
     cell.textLabel.text = location.name;
     cell.detailTextLabel.text = location.address;
+    NSLog(@"%@", location.address);
     cell.backgroundColor = [UIColor colorWithRed:0.65098039215 green:0 blue:0 alpha:1];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.detailTextLabel.textColor = [UIColor whiteColor];
@@ -95,21 +100,25 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+    
     
     // Pass the selected object to the new view controller.
+    DateLocation *selectedLocation = [self.currentPlacesToDisplay objectAtIndex:indexPath.row];
+    
+    self.mediator.detailsVC.selectedLocation = selectedLocation;
+    
+    [self.navigationController pushViewController:self.mediator.detailsVC animated:TRUE];
     
     // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    //[self.navigationController pushViewController:detailViewController animated:YES];
 }
-*/
+
 
 /*
 #pragma mark - Navigation

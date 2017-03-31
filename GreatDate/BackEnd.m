@@ -32,10 +32,11 @@
             
             NSArray *theArray = item.placemark.addressDictionary[@"FormattedAddressLines"];
             NSString *theString = [NSString stringWithFormat:@"%@, %@", theArray[0], theArray[1]];
+            NSURL *url = item.url;
             //NSLog(@"PLACEMARK: %@",theString);
             
             
-            DateLocation *newLocation = [[DateLocation alloc]initWithName: item.name address: theString type: foodType url: nil andIsResturant: TRUE];
+            DateLocation *newLocation = [[DateLocation alloc]initWithName: item.name address: theString type: foodType url: url andIsResturant: TRUE];
             
             [self.mediator.resturantArray addObject:newLocation];
         }
@@ -88,10 +89,11 @@
 //                NSLog(@"ADDRESS:   %@", place[@"vicinity"]);
                 
                 NSString *name = place[@"name"];
-                NSString *address = place[@"address"];
+                NSString *address = place[@"vicinity"];
+                NSURL *url = [NSURL URLWithString:place[@"url"]];
 
                 
-                DateLocation *newLocation = [[DateLocation alloc]initWithName: name address: address type: funType url: nil andIsResturant: FALSE];
+                DateLocation *newLocation = [[DateLocation alloc]initWithName: name address: address type: funType url: url andIsResturant: FALSE];
                 
                 [self.mediator.entertainmentLocationsArray addObject:newLocation];
             }
