@@ -7,9 +7,10 @@
 //
 
 #import "TableViewController.h"
+#import "Mediator.h"
 
 @interface TableViewController ()
-
+@property Mediator *mediator;
 @end
 
 @implementation TableViewController
@@ -17,39 +18,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    //self.tableView.backgroundColor = [UIColor redColor];
+    //self.tableView.separatorColor = [UIColor redColor];
+    //self.tableView.tintColor = [UIColor redColor];
+    //self.tableView.sectionIndexColor = [UIColor redColor];
+    //self.tableView.sectionIndexBackgroundColor = [UIColor redColor];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.mediator = [Mediator sharedDataManager];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.currentPlacesToDisplay.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
+    DateLocation *location = [self.currentPlacesToDisplay objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = location.name;
+    cell.detailTextLabel.text = location.address;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

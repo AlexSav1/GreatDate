@@ -17,18 +17,30 @@ static BackEnd *_backEnd;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
-        _backEnd = [[BackEnd alloc] init];
     });
     return sharedMyManager;
 }
 
--(void) startSearch{
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _backEnd = [[BackEnd alloc] init];
+        self.pickerVC = [[PickerViewController alloc]initWithNibName:@"PickerViewController" bundle:nil];
+        self.tableVC = [[TableViewController alloc]initWithNibName:@"TableViewController" bundle:nil];
+        self.resturantArray = [[NSMutableArray alloc]init];
+        self.entertainmentLocationsArray = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+-(void) startSearchForFoodType: (NSString*) foodType
+                    andFunType: (NSString*) funType{
     
 //    if (nil == self.backEnd.delegate)
 //            self.backEnd.delegate = self;
 
-    [_backEnd searchForResturantWithinLocation:self.location];
-    
+    [_backEnd searchForFunWithinLocation:self.location ForFoodType:foodType andFunType:funType];
 }
 
 -(void) didFindResturants{

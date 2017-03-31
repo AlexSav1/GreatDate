@@ -9,16 +9,26 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "BackEnd.h"
+#import "PickerViewController.h"
+#import "TableViewController.h"
 
-//@class BackEnd;
+//@class TableViewController;
 
 @interface Mediator : NSObject
 
 @property CLLocation *location;
 
-//@property BackEnd *backEnd;
+@property NSMutableArray *resturantArray;
+
+@property NSMutableArray *entertainmentLocationsArray;
+
+@property PickerViewController *pickerVC;
+
+@property TableViewController *tableVC;
+
 
 + (id)sharedDataManager;
--(void) startSearch;
+-(void) startSearchForFoodType: (NSString*) foodType
+                    andFunType: (NSString*) funType;
 
 @end

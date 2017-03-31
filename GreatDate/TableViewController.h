@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DateLocation.h"
+
 
 @interface TableViewController : UITableViewController
+
+@property NSMutableArray *currentPlacesToDisplay;
 
 @end

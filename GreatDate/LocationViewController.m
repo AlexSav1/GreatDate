@@ -42,18 +42,26 @@
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
     
+    self.mediator.location = [[CLLocation alloc]initWithLatitude:self.locationManager.location.coordinate.latitude longitude:self.locationManager.location.coordinate.latitude];
+    
+    NSLog(@"%@", self.mediator.location);
+    
+    [self.navigationController pushViewController:self.mediator.pickerVC animated:TRUE];
+    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     
     // If it's a relatively recent event, turn off updates to save power.
-    CLLocation* location = [locations lastObject];
+    //CLLocation* location = [locations lastObject];
     
-    self.mediator.location = [[CLLocation alloc]initWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude];
-    NSLog(@"%@", self.mediator.location);
+    
     
     [self.locationManager stopUpdatingLocation];
-    [self.mediator startSearch];
+    
+    //[self.mediator startSearch];
+    
+    
 }
 
 

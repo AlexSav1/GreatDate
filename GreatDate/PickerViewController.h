@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PickerViewController : UIViewController
+@interface PickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+-(void) pushTableVC;
 
 @end

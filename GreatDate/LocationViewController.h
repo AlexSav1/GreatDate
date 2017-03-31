@@ -11,6 +11,7 @@
 #import "Mediator.h"
 #import "BackEnd.h"
 
+
 @interface LocationViewController : UIViewController <CLLocationManagerDelegate>
 
 @property Mediator *mediator;
