@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8434477B1E8DCFD000FA254E /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843447791E8DCFD000FA254E /* PickerViewController.m */; };
 		8434477C1E8DCFD000FA254E /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434477A1E8DCFD000FA254E /* PickerViewController.xib */; };
+		847816E01E8EB75B008FF208 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847816DF1E8EB75B008FF208 /* WebViewController.m */; };
 		849937531E8E05EB0069F7B7 /* CheckUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849937511E8E05EB0069F7B7 /* CheckUpViewController.m */; };
 		849937541E8E05EB0069F7B7 /* CheckUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849937521E8E05EB0069F7B7 /* CheckUpViewController.xib */; };
 		F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D7A1E8DC7430011D12C /* LocationViewController.m */; };
@@ -32,6 +33,8 @@
 		843447781E8DCFD000FA254E /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		843447791E8DCFD000FA254E /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		8434477A1E8DCFD000FA254E /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		847816DE1E8EB75B008FF208 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		847816DF1E8EB75B008FF208 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		849937501E8E05EB0069F7B7 /* CheckUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckUpViewController.h; sourceTree = "<group>"; };
 		849937511E8E05EB0069F7B7 /* CheckUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckUpViewController.m; sourceTree = "<group>"; };
 		849937521E8E05EB0069F7B7 /* CheckUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckUpViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 		FA3DC7751E8DB7C500B43C66 /* GreatDate */ = {
 			isa = PBXGroup;
 			children = (
+				847816DE1E8EB75B008FF208 /* WebViewController.h */,
+				847816DF1E8EB75B008FF208 /* WebViewController.m */,
 				FA3DC7791E8DB7C500B43C66 /* AppDelegate.h */,
 				FA3DC77A1E8DB7C500B43C66 /* AppDelegate.m */,
 				FA3DC7C41E8DE2E800B43C66 /* DateLocation.h */,
@@ -217,6 +222,7 @@
 				FA3DC7C01E8DE24000B43C66 /* Mediator.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
 				8434477B1E8DCFD000FA254E /* PickerViewController.m in Sources */,
+				847816E01E8EB75B008FF208 /* WebViewController.m in Sources */,
 				FA3DC7BC1E8DE21500B43C66 /* DetailsViewController.m in Sources */,
 				FA3DC7B21E8DD3AD00B43C66 /* ResultsViewController.m in Sources */,
 				FA3DC7C31E8DE24E00B43C66 /* BackEnd.m in Sources */,
