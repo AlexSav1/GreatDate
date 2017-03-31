@@ -17,10 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if(self.selectedResturant.imageString == nil){
+        self.cellImageOne.image = [UIImage imageNamed:@"stockfood"];
+        
+    }
+    else{
     self.cellImageOne.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedResturant.imageString]]];
+    }
     self.nameLabelOne.text = self.selectedResturant.name;
     self.locationLabelOne.text = self.selectedResturant.address;
     
+    
+    if(self.selectedEntertainment == nil){
+        self.cellImageTwo.image = [UIImage imageNamed:@"stockfilm"];
+    }
     self.cellImageTwo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedEntertainment.imageString]]];
     self.nameLabelTwo.text = self.selectedEntertainment.name;
     self.locationLabelTwo.text = self.selectedEntertainment.address;
@@ -43,6 +53,6 @@
 
 - (IBAction)itsGoinDownButton:(UIButton *)sender {
 //    [[NSUserDefaults standardUserDefaults] setValue:@"YES" forKey:@"Cheeks"];
-    
+    NSLog(@"Pls don't crash");
 }
 @end
