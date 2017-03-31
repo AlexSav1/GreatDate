@@ -39,8 +39,9 @@ static BackEnd *_backEnd;
     
 //    if (nil == self.backEnd.delegate)
 //            self.backEnd.delegate = self;
-
+    //NSLog(@"LOCATION: %@", self.location);
     [_backEnd searchForFunWithinLocation:self.location ForFoodType:foodType andFunType:funType];
+    
 }
 
 -(void) didFindResturants{

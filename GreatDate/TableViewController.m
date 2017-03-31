@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //self.tableView.backgroundColor = [UIColor redColor];
+    self.tableView.backgroundColor = [UIColor colorWithRed:0.65098039215 green:0 blue:0 alpha:1];
     //self.tableView.separatorColor = [UIColor redColor];
     //self.tableView.tintColor = [UIColor redColor];
     //self.tableView.sectionIndexColor = [UIColor redColor];
@@ -53,6 +53,9 @@
     
     cell.textLabel.text = location.name;
     cell.detailTextLabel.text = location.address;
+    cell.backgroundColor = [UIColor colorWithRed:0.65098039215 green:0 blue:0 alpha:1];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
     
     return cell;
 }

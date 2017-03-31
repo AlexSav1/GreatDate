@@ -39,8 +39,8 @@
     self.foodPickerData = @[@"sushi", @"pizza", @"burger"];
     self.foodSelection = @"sushi";
     
-    self.funPickerData = @[@"movie_theater", @"bar",  @"bowling_alley", @"night_club"];
-    self.funSelection = @"movie_theater";
+    self.funPickerData = @[@"movietheater", @"bar",  @"bowlingalley", @"nightclub"];
+    self.funSelection = @"movietheater";
 
 }
 
