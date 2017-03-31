@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8434477B1E8DCFD000FA254E /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843447791E8DCFD000FA254E /* PickerViewController.m */; };
 		8434477C1E8DCFD000FA254E /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434477A1E8DCFD000FA254E /* PickerViewController.xib */; };
+		849937531E8E05EB0069F7B7 /* CheckUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849937511E8E05EB0069F7B7 /* CheckUpViewController.m */; };
+		849937541E8E05EB0069F7B7 /* CheckUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849937521E8E05EB0069F7B7 /* CheckUpViewController.xib */; };
 		F97F0D7C1E8DC7430011D12C /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97F0D7A1E8DC7430011D12C /* LocationViewController.m */; };
 		F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */; };
 		FA3DC7781E8DB7C500B43C66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC7771E8DB7C500B43C66 /* main.m */; };
@@ -30,6 +32,9 @@
 		843447781E8DCFD000FA254E /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		843447791E8DCFD000FA254E /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		8434477A1E8DCFD000FA254E /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		849937501E8E05EB0069F7B7 /* CheckUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckUpViewController.h; sourceTree = "<group>"; };
+		849937511E8E05EB0069F7B7 /* CheckUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckUpViewController.m; sourceTree = "<group>"; };
+		849937521E8E05EB0069F7B7 /* CheckUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckUpViewController.xib; sourceTree = "<group>"; };
 		F97F0D791E8DC7430011D12C /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		F97F0D7A1E8DC7430011D12C /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		F97F0D7B1E8DC7430011D12C /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -109,6 +114,9 @@
 				FA3DC7BB1E8DE21500B43C66 /* DetailsViewController.xib */,
 				FA3DC7AF1E8DD3AD00B43C66 /* ResultsViewController.h */,
 				FA3DC7B01E8DD3AD00B43C66 /* ResultsViewController.m */,
+				849937501E8E05EB0069F7B7 /* CheckUpViewController.h */,
+				849937511E8E05EB0069F7B7 /* CheckUpViewController.m */,
+				849937521E8E05EB0069F7B7 /* CheckUpViewController.xib */,
 				FA3DC7B11E8DD3AD00B43C66 /* ResultsViewController.xib */,
 				FA3DC7821E8DB7C500B43C66 /* Assets.xcassets */,
 				FA3DC7841E8DB7C500B43C66 /* LaunchScreen.storyboard */,
@@ -188,6 +196,7 @@
 				FA3DC7861E8DB7C500B43C66 /* LaunchScreen.storyboard in Resources */,
 				FA3DC7831E8DB7C500B43C66 /* Assets.xcassets in Resources */,
 				8434477C1E8DCFD000FA254E /* PickerViewController.xib in Resources */,
+				849937541E8E05EB0069F7B7 /* CheckUpViewController.xib in Resources */,
 				FA3DC7B81E8DE20100B43C66 /* TableViewController.xib in Resources */,
 				FA3DC7B31E8DD3AD00B43C66 /* ResultsViewController.xib in Resources */,
 				F97F0D7D1E8DC7430011D12C /* LocationViewController.xib in Resources */,
@@ -204,6 +213,7 @@
 				FA3DC7C61E8DE2E800B43C66 /* DateLocation.m in Sources */,
 				FA3DC77B1E8DB7C500B43C66 /* AppDelegate.m in Sources */,
 				FA3DC7B71E8DE20100B43C66 /* TableViewController.m in Sources */,
+				849937531E8E05EB0069F7B7 /* CheckUpViewController.m in Sources */,
 				FA3DC7C01E8DE24000B43C66 /* Mediator.m in Sources */,
 				FA3DC7781E8DB7C500B43C66 /* main.m in Sources */,
 				8434477B1E8DCFD000FA254E /* PickerViewController.m in Sources */,
