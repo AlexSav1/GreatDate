@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsViewController : UIViewController
+- (IBAction)goToSiteButtonOne:(UIButton *)sender;
+- (IBAction)goToSiteButtonTwo:(UIButton *)sender;
 
 @end

@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)goToSiteButtonOne:(UIButton *)sender {
+}
+
+- (IBAction)goToSiteButtonTwo:(UIButton *)sender {
+}
 @end
