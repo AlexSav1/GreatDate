@@ -18,6 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.nameLabelOne.text = self.selectedResturant.name;
+    self.locationLabelOne.text = self.selectedResturant.address;
+    
+    
+    self.nameLabelTwo.text = self.selectedEntertainment.name;
+    self.locationLabelTwo.text = self.selectedEntertainment.address;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,11 +40,6 @@
 }
 */
 
-- (IBAction)goToSiteButtonOne:(UIButton *)sender {
-}
-
-- (IBAction)goToSiteButtonTwo:(UIButton *)sender {
-}
 - (IBAction)itsGoinDownButton:(UIButton *)sender {
 }
 @end
