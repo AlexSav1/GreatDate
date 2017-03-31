@@ -8,6 +8,8 @@
 
 #import "Mediator.h"
 
+static BackEnd *_backEnd;
+
 @implementation Mediator
 
 + (id)sharedDataManager {
@@ -15,8 +17,22 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
+        _backEnd = [[BackEnd alloc] init];
     });
     return sharedMyManager;
+}
+
+-(void) startSearch{
+    
+//    if (nil == self.backEnd.delegate)
+//            self.backEnd.delegate = self;
+
+    [_backEnd searchForResturantWithinLocation:self.location];
+    
+}
+
+-(void) didFindResturants{
+    
 }
 
 

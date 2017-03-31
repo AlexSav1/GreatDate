@@ -7,9 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import "BackEnd.h"
+
+//@class BackEnd;
 
 @interface Mediator : NSObject
 
+@property CLLocation *location;
+
+//@property BackEnd *backEnd;
+
 + (id)sharedDataManager;
+-(void) startSearch;
 
 @end

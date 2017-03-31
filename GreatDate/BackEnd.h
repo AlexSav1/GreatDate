@@ -7,7 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
+//@protocol BackEndDelegate <NSObject>
+//
+//- (void) didFindResturants;
+//
+//@end
+
+@class Mediator;
+
 
 @interface BackEnd : NSObject
 
+//@property (nonatomic) id <BackEndDelegate> delegate;
+@property Mediator *mediator;
+
+-(void) searchForResturantWithinLocation:(CLLocation*) location;
+
 @end
+
