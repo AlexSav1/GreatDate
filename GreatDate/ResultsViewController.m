@@ -41,5 +41,7 @@
 */
 
 - (IBAction)itsGoinDownButton:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults] setValue:@"YES" forKey:@"Cheeks"];
+    
 }
 @end
