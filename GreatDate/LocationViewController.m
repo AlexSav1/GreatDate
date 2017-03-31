@@ -60,11 +60,14 @@
     // If it's a relatively recent event, turn off updates to save power.
     //CLLocation* location = [locations lastObject];
     
+    if(self.mediator.location == nil){
+        self.mediator.location = [[CLLocation alloc]initWithLatitude:self.locationManager.location.coordinate.latitude longitude:self.locationManager.location.coordinate.longitude];
+    }
     
     
     [self.locationManager stopUpdatingLocation];
     
-    self.mediator.location = [[CLLocation alloc]initWithLatitude:self.locationManager.location.coordinate.latitude longitude:self.locationManager.location.coordinate.longitude];
+    
     
     NSLog(@"LOCATION: %@", self.mediator.location);
     //[self.mediator startSearch];
