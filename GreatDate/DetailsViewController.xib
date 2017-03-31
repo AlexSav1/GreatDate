@@ -6,11 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController">
             <connections>
+                <outlet property="locationAddress" destination="Kiw-eG-xOI" id="bdB-Jy-OUB"/>
+                <outlet property="locationImage" destination="5XR-xx-iOU" id="6l3-g4-RHc"/>
+                <outlet property="locationName" destination="DKJ-zl-bPr" id="bbT-Ue-nii"/>
+                <outlet property="locationPhoneNumber" destination="ajN-EX-mC5" id="RLX-us-Y0w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,46 +25,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5XR-xx-iOU">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKJ-zl-bPr">
-                    <rect key="frame" x="15" y="29" width="183" height="69"/>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                    <rect key="frame" x="15" y="251" width="185" height="44.5"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiw-eG-xOI">
-                    <rect key="frame" x="15" y="161" width="93" height="69"/>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                    <rect key="frame" x="15" y="303.5" width="110" height="46"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="29"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBm-29-Xq4">
-                    <rect key="frame" x="123.5" y="541" width="128" height="63"/>
-                    <color key="backgroundColor" red="0.10588235294117647" green="0.63921568627450975" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
-                    <state key="normal" title="Go!">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="15"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajN-EX-mC5">
-                    <rect key="frame" x="15" y="293" width="171" height="69"/>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                    <rect key="frame" x="15" y="357" width="184" height="44.5"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdN-z8-F1p">
-                    <rect key="frame" x="123.5" y="415" width="128" height="63"/>
+                    <rect key="frame" x="15" y="561" width="134" height="43"/>
                     <color key="backgroundColor" red="0.1058823529" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                     <state key="normal" title="More Details">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -68,46 +60,61 @@
                             <integer key="value" value="15"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="moreDetails:" destination="-1" eventType="touchUpInside" id="Igt-MA-57x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBm-29-Xq4">
+                    <rect key="frame" x="226" y="561" width="134" height="43"/>
+                    <color key="backgroundColor" red="0.10588235294117647" green="0.63921568627450975" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                    <state key="normal" title="Lets go!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="letsGo:" destination="-1" eventType="touchUpInside" id="Fj7-Yk-n1P"/>
+                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.65098039220000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="DKJ-zl-bPr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="088-wL-wh4"/>
                 <constraint firstAttribute="bottom" secondItem="TBm-29-Xq4" secondAttribute="bottom" constant="63" id="0fA-0K-d4a"/>
-                <constraint firstItem="TBm-29-Xq4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0gq-gt-kzP"/>
+                <constraint firstItem="xdN-z8-F1p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="3X6-E9-aKY"/>
                 <constraint firstItem="TBm-29-Xq4" firstAttribute="centerY" secondItem="ajN-EX-mC5" secondAttribute="centerY" id="4wn-nN-JsV"/>
-                <constraint firstItem="xdN-z8-F1p" firstAttribute="centerX" secondItem="TBm-29-Xq4" secondAttribute="centerX" id="5dF-Lt-3Kw"/>
-                <constraint firstItem="Kiw-eG-xOI" firstAttribute="top" secondItem="DKJ-zl-bPr" secondAttribute="bottom" constant="63" id="5eg-T2-RBF"/>
+                <constraint firstItem="DKJ-zl-bPr" firstAttribute="top" secondItem="5XR-xx-iOU" secondAttribute="bottom" constant="28.5" id="7ao-R2-f9M"/>
                 <constraint firstItem="xdN-z8-F1p" firstAttribute="centerY" secondItem="Kiw-eG-xOI" secondAttribute="centerY" id="8mA-1t-66D"/>
                 <constraint firstItem="TBm-29-Xq4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C7F-hG-TKi"/>
                 <constraint firstItem="5XR-xx-iOU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FK9-bQ-Rvm"/>
+                <constraint firstItem="xdN-z8-F1p" firstAttribute="centerY" secondItem="TBm-29-Xq4" secondAttribute="centerY" id="FiK-qq-Unb"/>
                 <constraint firstItem="Kiw-eG-xOI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="How-8N-XJn"/>
-                <constraint firstItem="xdN-z8-F1p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Izu-ZP-t4H"/>
-                <constraint firstItem="TBm-29-Xq4" firstAttribute="top" secondItem="xdN-z8-F1p" secondAttribute="bottom" constant="63" id="JUp-0E-D0N"/>
-                <constraint firstItem="5XR-xx-iOU" firstAttribute="top" secondItem="DKJ-zl-bPr" secondAttribute="bottom" constant="-98" id="MbI-hD-MMS"/>
                 <constraint firstItem="ajN-EX-mC5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Rce-WE-knj"/>
+                <constraint firstItem="TBm-29-Xq4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2.8" id="SAw-w5-RWU"/>
+                <constraint firstItem="xdN-z8-F1p" firstAttribute="width" secondItem="TBm-29-Xq4" secondAttribute="width" id="TgC-6j-Uzx"/>
                 <constraint firstItem="TBm-29-Xq4" firstAttribute="leading" secondItem="xdN-z8-F1p" secondAttribute="leading" id="Vpj-8q-Yrh"/>
+                <constraint firstAttribute="trailing" secondItem="TBm-29-Xq4" secondAttribute="trailing" constant="15" id="XBX-xR-m7d"/>
                 <constraint firstItem="DKJ-zl-bPr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c6G-bD-tmt"/>
                 <constraint firstAttribute="trailing" secondItem="5XR-xx-iOU" secondAttribute="trailing" id="dhg-hQ-gxU"/>
-                <constraint firstItem="TBm-29-Xq4" firstAttribute="width" secondItem="xdN-z8-F1p" secondAttribute="width" id="i7X-Lc-vgS"/>
-                <constraint firstAttribute="bottom" secondItem="5XR-xx-iOU" secondAttribute="bottom" id="mw5-71-WtI"/>
                 <constraint firstItem="5XR-xx-iOU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nXG-4M-blA"/>
-                <constraint firstItem="ajN-EX-mC5" firstAttribute="top" secondItem="Kiw-eG-xOI" secondAttribute="bottom" constant="63" id="pFx-V5-3OC"/>
+                <constraint firstItem="ajN-EX-mC5" firstAttribute="top" secondItem="Kiw-eG-xOI" secondAttribute="bottom" constant="8" id="piR-oY-ym1"/>
+                <constraint firstItem="Kiw-eG-xOI" firstAttribute="top" secondItem="DKJ-zl-bPr" secondAttribute="bottom" constant="8" id="uuO-Vl-16Y"/>
+                <constraint firstItem="5XR-xx-iOU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="xs6-oe-957"/>
                 <constraint firstAttribute="trailing" secondItem="xdN-z8-F1p" secondAttribute="trailing" constant="15" id="yE4-wM-sA2"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="088-wL-wh4"/>
                     <exclude reference="c6G-bD-tmt"/>
-                    <exclude reference="5dF-Lt-3Kw"/>
                     <exclude reference="8mA-1t-66D"/>
-                    <exclude reference="Izu-ZP-t4H"/>
                     <exclude reference="yE4-wM-sA2"/>
                     <exclude reference="0fA-0K-d4a"/>
-                    <exclude reference="0gq-gt-kzP"/>
                     <exclude reference="4wn-nN-JsV"/>
                     <exclude reference="C7F-hG-TKi"/>
-                    <exclude reference="JUp-0E-D0N"/>
                     <exclude reference="Vpj-8q-Yrh"/>
                 </mask>
             </variation>
@@ -123,12 +130,8 @@
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
                     <include reference="088-wL-wh4"/>
-                    <include reference="5dF-Lt-3Kw"/>
-                    <include reference="Izu-ZP-t4H"/>
                     <include reference="0fA-0K-d4a"/>
-                    <include reference="0gq-gt-kzP"/>
                     <exclude reference="C7F-hG-TKi"/>
-                    <include reference="JUp-0E-D0N"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="35.5" y="53.5"/>
