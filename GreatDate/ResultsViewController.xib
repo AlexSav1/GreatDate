@@ -57,7 +57,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fon-VR-t1R">
                     <rect key="frame" x="99" y="624" width="176" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" cyan="0.75534941089999996" magenta="0.1093197929" yellow="0.084560453889999998" black="0.023419991139999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <color key="backgroundColor" cyan="0.49575020539999998" magenta="0.32986111109999999" yellow="0.0" black="0.025115352350000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                     <state key="normal" title="It's Going Down">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,7 +75,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" cyan="0.0" magenta="1" yellow="0.66609700520000004" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <color key="backgroundColor" cyan="0.0" magenta="1" yellow="0.55680338539999996" black="0.1893728596" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
