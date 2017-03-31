@@ -18,6 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.mediator = [Mediator sharedDataManager];
+    
+    self.navigationController.navigationBar.translucent = NO;
+     
+    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 
