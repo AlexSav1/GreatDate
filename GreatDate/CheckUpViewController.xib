@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gni-hC-94a">
                     <rect key="frame" x="62.5" y="421" width="250" height="111"/>
-                    <color key="backgroundColor" red="0.1058823529" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" cyan="0.49575020539999998" magenta="0.32986111109999999" yellow="0.0" black="0.025115352350000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="31"/>
                     <state key="normal" title="I'd rather not talk about it...">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +44,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gA-yA-d7D">
                     <rect key="frame" x="62.5" y="210" width="250" height="111"/>
-                    <color key="backgroundColor" red="0.1058823529" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" cyan="0.49575020539999998" magenta="0.32986111109999999" yellow="0.0" black="0.025115352350000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="31"/>
                     <state key="normal" title="Incredible!">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,7 +59,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.65098039220000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" cyan="0.0" magenta="1" yellow="0.55680338539999996" black="0.1893728596" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
             <constraints>
                 <constraint firstItem="Xpp-X5-nVZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="5/6" id="0s0-aE-e7e"/>
                 <constraint firstItem="Xpp-X5-nVZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F7c-Tg-fPx"/>

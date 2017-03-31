@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,7 +50,7 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdN-z8-F1p">
                     <rect key="frame" x="15" y="561" width="134" height="43"/>
-                    <color key="backgroundColor" red="0.1058823529" green="0.63921568630000003" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" cyan="0.49575020539999998" magenta="0.32986111109999999" yellow="0.0" black="0.025115352350000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                     <state key="normal" title="More Details">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,7 +66,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBm-29-Xq4">
                     <rect key="frame" x="226" y="561" width="134" height="43"/>
-                    <color key="backgroundColor" red="0.10588235294117647" green="0.63921568627450975" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" cyan="0.49575020539999998" magenta="0.32986111109999999" yellow="0.0" black="0.025115352350000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                     <state key="normal" title="Lets go!">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,7 +81,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.65098039220000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cyan="0.0" magenta="1" yellow="0.55680338539999996" black="0.1893728596" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
             <constraints>
                 <constraint firstItem="DKJ-zl-bPr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="088-wL-wh4"/>
                 <constraint firstAttribute="bottom" secondItem="TBm-29-Xq4" secondAttribute="bottom" constant="63" id="0fA-0K-d4a"/>
