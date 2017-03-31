@@ -1,5 +1,5 @@
 //
-//  EntertainmentTableViewController.h
+//  DetailsViewController.h
 //  GreatDate
 //
 //  Created by Alex Laptop on 3/30/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EntertainmentTableViewController : UITableViewController
+@interface DetailsViewController : UIViewController
 
 @end

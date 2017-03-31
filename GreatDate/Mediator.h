@@ -1,13 +1,15 @@
 //
-//  ResturantDetailViewController.h
+//  Mediator.h
 //  GreatDate
 //
 //  Created by Alex Laptop on 3/30/17.
 //  Copyright © 2017 Alex Laptop. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ResturantDetailViewController : UIViewController
+@interface Mediator : NSObject
+
++ (id)sharedDataManager;
 
 @end

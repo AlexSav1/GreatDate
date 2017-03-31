@@ -1,18 +1,18 @@
 //
-//  EntertainmentTableViewController.m
+//  TableViewController.m
 //  GreatDate
 //
 //  Created by Alex Laptop on 3/30/17.
 //  Copyright © 2017 Alex Laptop. All rights reserved.
 //
 
-#import "EntertainmentTableViewController.h"
+#import "TableViewController.h"
 
-@interface EntertainmentTableViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation EntertainmentTableViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,18 +1,18 @@
 //
-//  ResturantDetailViewController.m
+//  DetailsViewController.m
 //  GreatDate
 //
 //  Created by Alex Laptop on 3/30/17.
 //  Copyright © 2017 Alex Laptop. All rights reserved.
 //
 
-#import "ResturantDetailViewController.h"
+#import "DetailsViewController.h"
 
-@interface ResturantDetailViewController ()
+@interface DetailsViewController ()
 
 @end
 
-@implementation ResturantDetailViewController
+@implementation DetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
