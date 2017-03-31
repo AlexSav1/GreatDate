@@ -21,9 +21,12 @@
     
     self.navigationController.navigationBar.translucent = NO;
      
-    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.40392157 green:0.48627451 blue:0.67058824 alpha:0.1];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -77,5 +80,6 @@
 
 
 - (IBAction)zipCodeButton:(UIButton *)sender {
+    
 }
 @end
