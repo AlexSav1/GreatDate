@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)moreDetails:(UIButton *)sender {
+}
+
+- (IBAction)letsGo:(UIButton *)sender {
+}
 @end
