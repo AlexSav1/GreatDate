@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultsViewController">
             <connections>
+                <outlet property="cellImageOne" destination="HfR-VD-5tw" id="Hxw-yn-mBG"/>
+                <outlet property="cellImageTwo" destination="alA-Z7-itQ" id="ioy-mf-Tf4"/>
+                <outlet property="locationLabelOne" destination="rme-ex-5Gk" id="tq0-Jl-5AT"/>
+                <outlet property="locationLabelTwo" destination="hJO-GU-ztW" id="xP3-Bg-61C"/>
+                <outlet property="nameLabelOne" destination="3SZ-5H-dd5" id="QPQ-GY-VmP"/>
+                <outlet property="nameLabelTwo" destination="6ra-c4-Jav" id="tQr-IV-dfY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,8 +33,9 @@
                     <rect key="frame" x="93" y="288" width="176" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cyan="0.75534941089999996" magenta="0.1093197929" yellow="0.084560453889999998" black="0.023419991139999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                     <state key="normal" title="Press for more info">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="goToSiteButtonOne:" destination="-1" eventType="touchUpInside" id="brt-VC-ZBW"/>
@@ -37,15 +44,15 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SZ-5H-dd5">
                     <rect key="frame" x="16" y="209" width="132" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rme-ex-5Gk">
                     <rect key="frame" x="200" y="209" width="159" height="71"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="alA-Z7-itQ">
@@ -55,23 +62,24 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-c4-Jav">
                     <rect key="frame" x="0.0" y="501" width="132" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJO-GU-ztW">
                     <rect key="frame" x="200" y="501" width="159" height="71"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-6T-gAs">
                     <rect key="frame" x="99" y="580" width="176" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cyan="0.75534941089999996" magenta="0.1093197929" yellow="0.084560453889999998" black="0.023419991139999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                     <state key="normal" title="Press for more info">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="goToSiteButtonTwo:" destination="-1" eventType="touchUpInside" id="ZGk-Cg-Bpw"/>
@@ -81,11 +89,13 @@
                     <rect key="frame" x="99" y="624" width="176" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cyan="0.75534941089999996" magenta="0.1093197929" yellow="0.084560453889999998" black="0.023419991139999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                    <state key="normal" title="Save Date?">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                    <state key="normal" title="It's Going Down">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="goToSiteButtonTwo:" destination="-1" eventType="touchUpInside" id="TAj-bq-w7g"/>
+                        <action selector="itsGoinDownButton:" destination="-1" eventType="touchUpInside" id="oKI-yq-kJa"/>
                     </connections>
                 </button>
             </subviews>
