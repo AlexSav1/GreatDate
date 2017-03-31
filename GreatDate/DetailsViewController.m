@@ -23,7 +23,7 @@
 }
 
 -(void) viewWillAppear:(BOOL)animated{
-    //self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.image]]];
+    self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedLocation.imageString]]];
     self.locationName.text = self.selectedLocation.name;
     self.locationAddress.text = self.selectedLocation.address;
     NSLog(@"%@", self.selectedLocation);

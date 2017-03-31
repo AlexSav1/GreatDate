@@ -36,7 +36,9 @@
             //NSLog(@"PLACEMARK: %@",theString);
             
             
-            DateLocation *newLocation = [[DateLocation alloc]initWithName: item.name address: theString type: foodType url: url andIsResturant: TRUE];
+            //DateLocation *newLocation = [[DateLocation alloc]initWithName: item.name address: theString type: foodType url: url andIsResturant: TRUE];
+            
+            DateLocation *newLocation = [[DateLocation alloc]initWithName:item.name address:theString type:foodType url:url andIsResturant:TRUE PhoneNumber:item.phoneNumber andImage:nil];
             
             [self.mediator.resturantArray addObject:newLocation];
         }
@@ -91,9 +93,17 @@
                 NSString *name = place[@"name"];
                 NSString *address = place[@"vicinity"];
                 NSURL *url = [NSURL URLWithString:place[@"url"]];
-
                 
-                DateLocation *newLocation = [[DateLocation alloc]initWithName: name address: address type: funType url: url andIsResturant: FALSE];
+                //get image url
+                NSArray *imageArray = place[@"photos"];
+                NSDictionary *imageDict = imageArray[0];
+                NSString *width = imageDict[@"width"];
+                NSString *ref = imageDict[@"photo_reference"];
+                NSString *imageURLString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/photo?maxwidth=%@&photoreference=%@&key=%@",width, ref, key];
+                
+                NSLog(@"IMAGESTRINGGGGGGGG: %@", imageURLString);
+                
+                DateLocation *newLocation = [[DateLocation alloc]initWithName:name address:address type:funType url:url andIsResturant:FALSE PhoneNumber:nil andImage:imageURLString];
                 
                 [self.mediator.entertainmentLocationsArray addObject:newLocation];
             }

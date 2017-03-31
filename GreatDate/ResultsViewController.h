@@ -15,14 +15,14 @@
 
 @property DateLocation *selectedEntertainment;
 
-- (IBAction)goToSiteButtonOne:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabelOne;
 @property (strong, nonatomic) IBOutlet UILabel *locationLabelOne;
 @property (strong, nonatomic) IBOutlet UIImageView *cellImageOne;
-- (IBAction)goToSiteButtonTwo:(UIButton *)sender;
+
 @property (strong, nonatomic) IBOutlet UILabel *nameLabelTwo;
 @property (strong, nonatomic) IBOutlet UILabel *locationLabelTwo;
 @property (strong, nonatomic) IBOutlet UIImageView *cellImageTwo;
+
 - (IBAction)itsGoinDownButton:(UIButton *)sender;
 
 @end
