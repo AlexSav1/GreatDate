@@ -25,7 +25,7 @@
     
     request.URL = self.url;
     
-    NSString *convertedString = [self.selectedLocation.name stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+    NSString *convertedString = [self.locationName stringByReplacingOccurrencesOfString:@" " withString:@"+"];
     
     NSLog(@"%@", convertedString);
     

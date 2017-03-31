@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.image]]];
+    self.locationName.text = self.name;
+    self.locationAddress.text = self.address;
+    self.locationPhoneNumber.text = self.phoneNumber;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +39,10 @@
 */
 
 - (IBAction)moreDetails:(UIButton *)sender {
+    WebViewController *webVC = [[WebViewController alloc] init];
+    webVC.url = self.url;
+    webVC.locationName = self.name;
+    [self.navigationController pushViewController:webVC animated:true];
 }
 
 - (IBAction)letsGo:(UIButton *)sender {

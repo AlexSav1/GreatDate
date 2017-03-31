@@ -10,6 +10,8 @@
 #import "DateLocation.h"
 
 @interface WebViewController : UIViewController
+
 @property NSURL *url;
-@property DateLocation *selectedLocation;
+@property NSString *locationName;
+
 @end
