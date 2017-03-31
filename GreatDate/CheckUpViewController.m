@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+- (IBAction)poundTownButton:(id)sender {
+    
+}
+- (IBAction)rejectionButton:(id)sender {
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

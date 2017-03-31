@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+//    if(){
     UIViewController *rootController = [[LocationViewController alloc]initWithNibName:@"LocationViewController" bundle:nil];
     
     self.navigationController = [[UINavigationController alloc]
@@ -32,6 +33,24 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     return YES;
+//    }
+//    else{
+    
+//        UIViewController *rootController = [[LocationViewController alloc]initWithNibName:@"LocationViewController" bundle:nil];
+//        
+//        self.navigationController = [[UINavigationController alloc]
+//                                     initWithRootViewController:rootController];
+//        
+//        self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+//        [self.window addSubview:self.navigationController.view];
+//        [self.window setRootViewController:self.navigationController];
+//        [self.window makeKeyAndVisible];
+//        
+//        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//        
+//        return YES;
+
+//    }
 }
 
 
