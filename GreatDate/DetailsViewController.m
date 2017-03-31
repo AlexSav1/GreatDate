@@ -26,6 +26,7 @@
     self.locationImage.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedLocation.imageString]]];
     self.locationName.text = self.selectedLocation.name;
     self.locationAddress.text = self.selectedLocation.address;
+    self.locationPhoneNumber.text = self.selectedLocation.phoneNumber;
     NSLog(@"%@", self.selectedLocation);
     //self.locationPhoneNumber.text = self.phoneNumber;
 }

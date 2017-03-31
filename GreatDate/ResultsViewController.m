@@ -17,10 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.cellImageOne.image = [UIImage  imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedResturant.imageString]]];
     self.nameLabelOne.text = self.selectedResturant.name;
     self.locationLabelOne.text = self.selectedResturant.address;
     
-    
+    self.cellImageTwo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedEntertainment.imageString]]];
     self.nameLabelTwo.text = self.selectedEntertainment.name;
     self.locationLabelTwo.text = self.selectedEntertainment.address;
 }
@@ -41,7 +42,7 @@
 */
 
 - (IBAction)itsGoinDownButton:(UIButton *)sender {
-    [[NSUserDefaults standardUserDefaults] setValue:@"YES" forKey:@"Cheeks"];
+//    [[NSUserDefaults standardUserDefaults] setValue:@"YES" forKey:@"Cheeks"];
     
 }
 @end
