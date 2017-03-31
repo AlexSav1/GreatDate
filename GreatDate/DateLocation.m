@@ -14,7 +14,9 @@
                      address: (NSString*) address
                         type: (NSString*) type
                          url: (NSURL*) url
-              andIsResturant: (BOOL) isResturant{
+              andIsResturant: (BOOL) isResturant
+                 PhoneNumber: (NSString*) number
+                    andImage: (NSString*) imageString{
     
     self = [super init];
     if (self) {
@@ -23,6 +25,8 @@
         self.type = type;
         self.url = url;
         self.isResturant = isResturant;
+        self.phoneNumber = number;
+        self.imageString = imageString;
     }
     return self;
 }
