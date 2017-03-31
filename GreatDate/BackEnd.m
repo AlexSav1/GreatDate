@@ -25,14 +25,14 @@
         //NSLog(@"%@", response.mapItems);
         
         for (MKMapItem *item in response.mapItems) {
-            
-            NSLog(@"NAME: %@", item.name);
+            NSLog(@"ITEM: %@",item);
+            //NSLog(@"NAME: %@", item.name);
             //NSLog(@"PLACEMARK: %@", item.placemark.addressDictionary[@"FormattedAddressLines"]);
-            NSLog(@"URL: %@", item.url);
+            //NSLog(@"URL: %@", item.url);
             
             NSArray *theArray = item.placemark.addressDictionary[@"FormattedAddressLines"];
             NSString *theString = [NSString stringWithFormat:@"%@, %@", theArray[0], theArray[1]];
-            NSLog(@"PLACEMARK: %@",theString);
+            //NSLog(@"PLACEMARK: %@",theString);
             
             
             DateLocation *newLocation = [[DateLocation alloc]initWithName: item.name address: theString type: foodType url: nil andIsResturant: TRUE];
@@ -57,7 +57,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
     NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%f,%f&radius=75&type=%@&key=%@", location.coordinate.latitude, location.coordinate.longitude, funType, key];
-    
+    NSLog(@"%@", urlString);
     [request setURL:[NSURL URLWithString:urlString]];
     
     request.HTTPMethod = @"GET";
@@ -79,8 +79,10 @@
                 return;
             }
             
+            NSLog(@"%@", newDiction);
+            
             for (NSDictionary *place in newDiction[@"results"]) {
-//                NSLog(@"INDIV:   %@", place);
+                NSLog(@"INDIV:   %@", place);
 //                
 //                NSLog(@"NAME:   %@", place[@"name"]);
 //                NSLog(@"ADDRESS:   %@", place[@"vicinity"]);
