@@ -42,9 +42,9 @@
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
     
-    self.mediator.location = [[CLLocation alloc]initWithLatitude:self.locationManager.location.coordinate.latitude longitude:self.locationManager.location.coordinate.latitude];
     
-    NSLog(@"%@", self.mediator.location);
+    
+    
     
     [self.navigationController pushViewController:self.mediator.pickerVC animated:TRUE];
     
@@ -59,6 +59,9 @@
     
     [self.locationManager stopUpdatingLocation];
     
+    self.mediator.location = [[CLLocation alloc]initWithLatitude:self.locationManager.location.coordinate.latitude longitude:self.locationManager.location.coordinate.longitude];
+    
+    NSLog(@"LOCATION: %@", self.mediator.location);
     //[self.mediator startSearch];
     
     
